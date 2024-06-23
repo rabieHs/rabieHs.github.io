@@ -10,6 +10,10 @@ import insta from "../images/insta.png";
 import twitter from "../images/twitter.png";
 import vfx from "../images/vfx.png";
 import spotify from "../images/spotify.png";
+import coffee from "../images/coffee.png";
+import mosque from "../images/mosque.png";
+import bus from "../images/bus.png";
+import crypto from "../images/crypto.png";
 
 export const Bio = {
     name: "Rabie Houssaini",
@@ -143,11 +147,7 @@ export const Bio = {
           image:
             "https://plugins.jetbrains.com/files/12129/261752/icon/pluginIcon.png",
         },
-        {
-          name: "GetX",
-          image:
-            "https://blog.tpk.kr/posts/how-to-get-flutter-boilerplate/getx.webp",
-        },
+       
         
       ],
     },
@@ -157,8 +157,7 @@ export const Bio = {
         {
           name: "Git",
           image:
-            "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
-        },
+"https://www.git-scm.com/images/logos/logomark-orange@2x.png"        },
         {
           name: "GitHub",
           image:
@@ -178,18 +177,12 @@ export const Bio = {
         {
           name: "Postman",
           image:
-            "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
-        },
-        {
-          name: "Adobe XD",
-          image:
-            "https://camo.githubusercontent.com/c205ecbe12500177d102169d97bc1c17c545155fdf5ec78c08d54ac53e5b38c1/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f61646f62652d78642e737667",
-        },
+"https://cdn.iconscout.com/icon/free/png-256/free-postman-3521648-2945092.png?f=webp"        },
+       
         {
           name: "Figma",
           image:
-            "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
-        },
+"https://w7.pngwing.com/pngs/911/515/png-transparent-figma-logo-brand-logos-brands-in-colors-icon-thumbnail.png"        },
         {
           name: "Codemagic",
           image:
@@ -289,6 +282,56 @@ export const Bio = {
   export const projects = [
     {
       id: 0,
+      title: "Mosque Finder",
+      date: "Jun 2024",
+      description:
+        "A Flutter mobile app that helps users find nearby mosques, view prayer times, and get directions to the mosque. The app uses the Google Maps API for location services and the Aladhan API for prayer times. Users can also view mosque details, such as facilities, contact information, and reviews.",
+      image:mosque,
+      tags: ["Flutter","Bloc","Clean architecture","Google Maps", "Rest Apis" ,"Firebase", "Provider", "Dart"],
+      category: "Flutter",
+      github: "https://github.com/rabieHs/find-mosque",
+      webapp: "https://github.com/rabieHs/find-mosque",
+    },
+    {
+      id: 1,
+      title: "Crypty",
+      date: "May 2024",
+      description:
+        "A Native iOS app that allows users to track their cryptocurrency investments and view real-time market data. Users can add their crypto holdings, track their portfolio performance, and receive price alerts for their favorite coins. The app also includes a news feed with the latest crypto updates and a watchlist feature for monitoring specific coins. Developed with Swift and SwiftUI, the app offers a seamless user experience with intuitive navigation and interactive charts.",
+      image:crypto,
+      tags: ["Swift", "Swiftui", "CoinGecko", "Combine", "CoreData", "MVVM", "API"],
+      category: "iOS",
+      github: "https://github.com/rabieHs/crypty",
+      webapp: "https://github.com/rabieHs/crypty",
+    },
+    {
+      id: 2,
+      title: "Oasis Coffee",
+      date: "Apr 2024",
+      description:
+        "A Flutter mobile app that allows users to order coffee and pastries from a local cafe. Users can browse the menu, customize their order, and pay securely using the app. The app also includes a loyalty program, push notifications, and order tracking features. Developed with Flutter and Firebase for a seamless user experience.",
+      image:coffee,
+      tags: ["Flutter", "Firebase", , "Dart"],
+      category: "Flutter",
+      github: "https://github.com/rabieHs/oasis_app",
+      webapp: "https://github.com/rabieHs/oasis_app",
+    },
+
+    {
+      id: 3,
+      title: "Bus Rental",
+      date: "Mar 2024",
+      description:
+        "A Flutter mobile app that connects users with bus rental services for group travel. Users can search for available buses, view pricing and availability, and book a bus for their trip. The app includes features for bus owners to list their services, manage bookings, and track Clients. Developed with Flutter, and Firebase a seamless user experience.",
+      image:bus,
+      tags: ["Flutter", "Firebase", "Provider", "Dart"],
+      category: "Flutter",
+      github: "https://github.com/rabieHs/bus-location",
+      webapp: "https://github.com/rabieHs/bus-location",
+    },
+    {
+      
+      id: 4,
       title: "Spotify Clone",
       date: "Jun 2023 - Jul 2023",
       description: "The Spotify Clone is a native iOS application meticulously crafted using programmatic UIKit (without Storyboard), Swift, and the Spotify API. It seamlessly retrieves tracks, albums, playlists, and categories from the Spotify platform, offering users a comprehensive music browsing experience. Additionally, the app includes a library feature, enabling users to create, update, and delete playlists effortlessly." ,
@@ -296,7 +339,7 @@ export const Bio = {
       tags: [
         "Xcode",
         "Swift",
-        "IOKit",
+        "UIKit",
         "API",
         "MVVM",
       ],
@@ -305,7 +348,7 @@ export const Bio = {
       webapp: "",
     },
     {
-      id: 1,
+      id: 5,
       title: "Instagram Clone",
       date: "Apr 2023 - May 2023",
       description:
@@ -319,7 +362,7 @@ export const Bio = {
      
     },
     {
-      id: 2,
+      id: 6,
       title: "E-Commerce APP",
       date: "Jul 2022 - Sep 2022",
       description:
@@ -338,7 +381,7 @@ export const Bio = {
       webapp: "https://github.com/rabieHs/fullstack-e_commerce-app-flutter-nodeJs-MongoDB",
     },
     {
-      id: 3,
+      id: 7,
       title: "Todo App",
       date: "OCT 2023 - OCT 2023",
       description:
@@ -351,7 +394,7 @@ export const Bio = {
       webapp: "https://github.com/rabieHs/ToDoList-iOS",
     },
     {
-      id: 4,
+      id: 8,
       title: "Music Player APP",
       date: "Dec 2021 - Apr 2022",
       description:
@@ -364,7 +407,7 @@ export const Bio = {
       webapp: "https://github.com/rabieHs/Music_Player_App",
     },
     {
-      id: 5,
+      id: 9,
       title: "VFX club APP",
       date: "Jun 2023 - Jul 2023",
       description:
@@ -376,7 +419,7 @@ export const Bio = {
       webapp: "https://github.com/rishavchanda/Job-finder-App",
     },
     {
-      id: 6,
+      id: 10,
       title: "Twitter Clone",
       date: "Jul 2021",
       description:
@@ -390,7 +433,7 @@ export const Bio = {
     },
   
     {
-      id: 7,
+      id: 11,
       title: "Solu Dashboard",
       date: "Jun 2021",
       description:
@@ -403,7 +446,7 @@ export const Bio = {
       webapp: "",
     },
     {
-      id: 8,
+      id: 12,
       title: "Wiin",
       date: "Jun 2022",
       description:
@@ -415,7 +458,7 @@ export const Bio = {
       webapp: "https://github.com/rabieHs/wiin-service-Provider-App-flutter",
     },
     {
-      id: 9,
+      id: 13,
       title: "Mindwell",
       date: "Dec 2022 - Mar 2023",
       description:
@@ -427,7 +470,7 @@ export const Bio = {
       webapp: "https://github.com/rabieHs/PFE-Mental-health-App",
     },
     {
-      id: 10,
+      id: 14,
       title: "Chatify",
       date: "May 2022",
       description:
